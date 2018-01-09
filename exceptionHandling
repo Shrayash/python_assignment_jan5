@@ -1,0 +1,15 @@
+try:
+    fp = open("BarcaNews.txt", 'w')
+
+    try:
+        fp.write("FC Barcelona and Liverpool FC have reached an agreement for the transfer of Philippe Coutinho.")
+
+    finally:
+        print("Finally, closing the file.")
+        fp.close()
+
+except IOError:
+    print("Can't open the file.")
+
+else:
+    print("Content written in the file successfully.")

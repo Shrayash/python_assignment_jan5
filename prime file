@@ -1,0 +1,3 @@
+with open("PrimeNum.txt", "r") as fp:
+    primeNum = fp.read()
+    print(primeNum)

@@ -1,0 +1,30 @@
+def div(num):
+    print(10/num)
+
+
+def square(num):
+    print(num**2)
+
+
+user = input("Enter your choice: ")
+num = input("Enter number: ")
+
+choice = {
+    "1": div,
+    "2": square
+}
+
+try:
+    choice[user](num)
+
+except ValueError:
+    print("Invalid choice.")
+
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+
+except KeyError:
+    print("Character expected in choice.")
+
+else:
+    print("Task done successfully."
